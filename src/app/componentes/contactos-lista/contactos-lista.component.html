@@ -1,0 +1,35 @@
+<p>Lista de Contactos</p>
+<div style="padding: 50px">
+  <h1>Contactos</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>nombres</th>
+        <th>apellidos</th>
+        <th>correo</th>
+        <th>telefono</th>
+        <th>celular</th>
+        <th>direccion</th>
+        <th>imagen</th>
+        <th>idUsuario</th>
+        <th><a href="">Adicionar</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of contactosLista; track $index) {
+      <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.nombres }}</td>
+        <td>{{ item.apellidos }}</td>
+        <td>{{ item.correo }}</td>
+        <td>{{ item.telefono }}</td>
+        <td>{{ item.celular }}</td>
+        <td>{{ item.direccion }}</td>
+        <td>{{ item.imagen }}</td>
+        <td>{{ item.idUsuario }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
